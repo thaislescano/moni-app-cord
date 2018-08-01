@@ -9,16 +9,6 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-    background-image:linear-gradient(top, #424242 0%, #616161 51%);
-    background-image:-webkit-linear-gradient(top, #424242 0%, #616161 51%);
-    background-image:-ms-linear-gradient(top, #424242 0%, #616161 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #424242),
-        color-stop(0.51, #616161)
-    );
     background-attachment:fixed;
     font-family:'Roboto', Arial, sans-serif;
     font-size:12px;
@@ -28,12 +18,26 @@ body {
     text-transform:uppercase;
     width:100%;
 }
+
+#moni-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+#moni-logo-imagem {
+    text-align:center;
+    width:80%;
+    margin-top:20%;
+}
+
 #btnFooter {
     position: fixed;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     text-align:center;
-    background: #f21818;
+    background: #ab47bc;
     color: white;
     bottom:0;
     border:0;
