@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "compass/css3";
+
 
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
@@ -19,7 +21,34 @@ body {
     width:100%;
 }
 
+/* material design icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 #moni-logo{
+    margin-top:7%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,7 +58,9 @@ body {
 #moni-logo-imagem {
     text-align:center;
     width:80%;
-    margin-top:18%;
+    margin-top:35%;
+    position: absolute;
+    z-index: 111;
 }
 
 #btnFooter {
@@ -42,8 +73,71 @@ body {
     bottom:0;
     border:0;
     text-transform: uppercase;
-    font-size:18px;
+    font-size:16px;
 }
+
+/* input login */
+
+input::-webkit-input-placeholder, button {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+
+  form {
+    position: relative;
+    z-index: 222;
+    box-sizing: border-box;
+    width: 260px;
+    margin-top: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+  input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 20px 0;
+    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+    text-transform: uppercase;
+  }
+  input:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color:#ab47bc;
+    font-size: 15px;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    visibility: visible !important;
+  }
+  
+  button {
+    border: none;
+    background: #1abc9c;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size:16px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+ 
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
