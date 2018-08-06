@@ -48,6 +48,7 @@ body {
   }
 
 #moni-logo{
+    margin-top:7%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,7 +58,9 @@ body {
 #moni-logo-imagem {
     text-align:center;
     width:80%;
-    margin-top:18%;
+    margin-top:35%;
+    position: absolute;
+    z-index: 111;
 }
 
 #btnFooter {
@@ -70,7 +73,7 @@ body {
     bottom:0;
     border:0;
     text-transform: uppercase;
-    font-size:18px;
+    font-size:16px;
 }
 
 /* input login */
@@ -82,20 +85,21 @@ input::-webkit-input-placeholder, button {
   }
 
   form {
+    position: relative;
+    z-index: 222;
     box-sizing: border-box;
     width: 260px;
-    margin: 100px auto 0;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 65%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 40px;
-    border-radius: 3px;
-  }
-
+}
   input {
     margin: 40px 25px;
     width: 200px;
     display: block;
     border: none;
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: solid 1px #1abc9c;
     -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
             transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
@@ -105,6 +109,7 @@ input::-webkit-input-placeholder, button {
     background-size: 200px 100%;
     background-repeat: no-repeat;
     color: #0e6252;
+    text-transform: uppercase;
   }
   input:focus, input:valid {
     box-shadow: none;
@@ -112,8 +117,8 @@ input::-webkit-input-placeholder, button {
     background-position: 0 0;
   }
   input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
-    color: #1abc9c;
-    font-size: 11px;
+    color:#ab47bc;
+    font-size: 15px;
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
     visibility: visible !important;
@@ -124,7 +129,9 @@ input::-webkit-input-placeholder, button {
     background: #1abc9c;
     cursor: pointer;
     border-radius: 3px;
-    padding: 6px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size:16px;
     width: 200px;
     color: white;
     margin-left: 25px;
