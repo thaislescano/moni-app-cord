@@ -1,51 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
-
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-attachment:fixed;
-    font-family:'Roboto', Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
-}
-
 /* material design icons */
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
-
 
   /*navbar*/
   .navbar{
@@ -54,29 +7,33 @@ body {
     position:fixed;
     top:0;
     background-color:#ab47bc;
+    /*flexbox*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #more {
     color: white;
     position: fixed;
-    right: 4px;
-    top: 14px;
+    left: 2%;
   }
 
   #conta {
-    color: white;
-    position: fixed;
-    right: 28px;
-    top: 14px;
+   color: white;
+   position: fixed;
+   right: 2%;
   }
 
-  #titulo {
-    color: white;
-    position: fixed;
-    left: 32px;
-    top: 14px;
-    bottom: 4px;
-    font-size: 20px;
-    text-transform:lowercase important!;
-
-  }
+  #logo-branca {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
