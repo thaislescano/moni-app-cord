@@ -37,3 +37,19 @@
     margin-left: auto;
     margin-right: auto;
  }
+
+/*pesquisa*/
+ .pesquisar{
+  margin-top: 12%;
+ }
+
+.search-gif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ #lupa{
+    width:60%;
+ }
