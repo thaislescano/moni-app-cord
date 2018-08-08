@@ -20,13 +20,11 @@
   }
 
   #more {
-    color: white;
     position: fixed;
     left: 2%;
   }
 
   #conta {
-   color: white;
    position: fixed;
    right: 2%;
   }
@@ -49,6 +47,40 @@
     justify-content: center;
     align-items: center;
 }
+
+.search-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}    
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 2px solid #1abc9c;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  
+}
+
+.searchButton {
+  position: absolute;  
+  width: 38px;
+  height: 34px;
+  border: 1px solid #1abc9c;
+  background: #1abc9c;
+  text-align: center;
+  margin-top: 40px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
 
  #lupa{
     width:60%;
