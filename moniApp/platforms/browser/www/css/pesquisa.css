@@ -79,3 +79,12 @@ input[type=text] {
  #lupa{
     width:60%;
  }
+
+.navbar #myMenu {
+  display: none;
+  width:100%;
+  height:80px;
+  position:fixed;
+  top:54px;
+  background-color:#ab47bc;
+}
