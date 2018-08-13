@@ -1,9 +1,17 @@
 
-document.addEventListener("click", chamarPagina, true);
 
 function chamarPagina(){
-	
-	window.location = "pesquisar.html";
+	alert("clicado");
+	var xhr= new XMLHttpRequest();
+	xhr.open('GET', 'x.html', true);
+	xhr.onreadystatechange= function() {
+	    if (this.readyState!==4) return;
+	    if (this.status!==200) return; // or whatever error handling you want
+	    document.getElementById('btnFooter').innerHTML= this.responseText;
+	};
+	xhr.send();
+
+	//window.location = "pesquisar.html";
 }
 
 
@@ -14,7 +22,7 @@ function mostrarMenu(){
     if (menu.style.display === "block") {
         menu.style.display = "none";
         var icone = document.getElementById("more");
-        icone.innerHTML = "m";
+        icone.innerHTML = "menu";
     } else {
         menu.style.display = "block";
         var icone = document.getElementById("more");

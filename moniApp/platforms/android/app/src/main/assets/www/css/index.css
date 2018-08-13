@@ -22,13 +22,13 @@
 }
 
 #btnFooter {
-    position: fixed;
+    position: relative;
     width: 100%;
     padding: 15px 0;
     text-align:center;
     background: #ab47bc;
     color: white;
-    bottom:0;
+    bottom:-10px;
     border:0;
     text-transform: uppercase;
     font-size:16px;
@@ -67,11 +67,13 @@ input::-webkit-input-placeholder, button {
     color: #0e6252;
     text-transform: uppercase;
   }
+
   input:focus, input:valid {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
   }
+
   input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
     color:#ab47bc;
     font-size: 15px;
@@ -113,7 +115,7 @@ h1 {
     padding:0px;
     text-align:center;
 }
-
+/* não tá usando */
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
