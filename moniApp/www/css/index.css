@@ -2,18 +2,23 @@
 
 #moni-logo{
     margin-top:7%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
     align-items: center;
+  
    }
 
 #moni-logo-imagem {
     text-align:center;
     width:80%;
-    margin-top:35%;
-    position: absolute;
-    z-index: 111;
+    margin-top:-10%;
 }
 
 #btnFooter {
@@ -38,11 +43,9 @@ input::-webkit-input-placeholder, button {
   }
 
   form {
-    position: relative;
-    z-index: 222;
     box-sizing: border-box;
     width: 260px;
-    margin-top: 65%;
+    margin-top: -25%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;

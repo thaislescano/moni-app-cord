@@ -1,8 +1,12 @@
 
- function chamarPagina(path)
- {
-    window.location = path;
- }
+document.addEventListener("click", chamarPagina, true);
+
+function chamarPagina(){
+	
+	window.location = "pesquisar.html";
+}
+
+
 
 function mostrarMenu(){
 	/*alert('é hora do show');*/
@@ -10,7 +14,7 @@ function mostrarMenu(){
     if (menu.style.display === "block") {
         menu.style.display = "none";
         var icone = document.getElementById("more");
-        icone.innerHTML = "menu";
+        icone.innerHTML = "m";
     } else {
         menu.style.display = "block";
         var icone = document.getElementById("more");

@@ -1,24 +1,44 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html>
-    <head>
-      
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/pesquisa.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <title> Moni </title>
-    </head>
-    <body>
-       <div class="navbar">
-        <img id="logo-branca" src="img/moni-white.png" alt="logo moni branca">
-        <i id="conta" class="material-icons"> account_circle </i>
-        <i id="more" class="material-icons"> more_vert </i>
-       </div>      
-       
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
-</html>
+    <html>"text/css" href="css/pesquisa.css">
+            
+            <title> Moni </title>
+        </head>
+        <body>
+        <head>
+          
+            <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+             <link rel="stylesheet" type="text/css" href="css/geral.css">
+            <link rel="stylesheet" type=
+           <div class="navbar">
+                <i id="more" class="material-icons item" onclick="mostrarMenu()"> menu </i>
+                <div id="myMenu">
+                    <a href="#ir1">o que</a>
+                    <a href="#ir2">ainda</a>
+                    <a href="#ir3">n sei</a>
+                </div>
+            <img class="item" id="logo-branca" src="img/moni-white.png" alt="logo moni branca">
+            <i id="conta" class="material-icons item"> account_circle </i>
+           </div>    
+
+           <div class="pesquisar">
+              <div class="search-gif">
+                    <img id="lupa" src="img/lupazoom.gif" alt="gif lupa">
+              </div>  
+                 <div class="search-container">
+                    <form action="">
+                         <input type="text" placeholder="Pesquisar por disciplina" name="search">
+                         <button type="submit"> <i class="material-icons"> search </i></button>
+                     </form>
+                </div>
+                             
+            </div>
+             
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+        </body>
+    </html>
