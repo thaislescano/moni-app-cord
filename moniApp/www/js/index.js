@@ -1,21 +1,5 @@
 
 
-function chamarPagina(){
-	alert("clicado");
-	var xhr= new XMLHttpRequest();
-	xhr.open('GET', 'x.html', true);
-	xhr.onreadystatechange= function() {
-	    if (this.readyState!==4) return;
-	    if (this.status!==200) return; // or whatever error handling you want
-	    document.getElementById('btnFooter').innerHTML= this.responseText;
-	};
-	xhr.send();
-
-	//window.location = "pesquisar.html";
-}
-
-
-
 function mostrarMenu(){
 	/*alert('é hora do show');*/
 	var menu = document.getElementById("myMenu");
@@ -29,4 +13,17 @@ function mostrarMenu(){
    		icone.innerHTML = "close";
     }
 
+}
+
+var PAGINAS;
+function loadPages() {
+	//to do
+	//carregar todas as paginas de html em alguma variavel global
+	//pode ser a PAGINAS
+	//dai PAGINAS.home vai ser o html do login e PAGINAS.pesquisar do html de pesquisar
+}
+function chamarPagina(pagina){
+	//to do
+	//nessa parte vai receber uma string com o nome da pagina que vc quer chamar e..
+	document.getElementById("corpo").innerHTML = PAGINAS[pagina];
 }
