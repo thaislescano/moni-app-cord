@@ -1,5 +1,3 @@
-
-
 function mostrarMenu(){
 	/*alert('é hora do show');*/
 	var menu = document.getElementById("myMenu");
