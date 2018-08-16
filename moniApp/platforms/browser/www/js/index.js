@@ -8,9 +8,12 @@ function carregarView(pagina){
 
 function mostrarMenu(){
 	var menu = document.getElementById("myMenu");
+	var icone = document.getElementById("more");
     if (menu.style.display === "none") {
+    	icone.innerHTML = "close";
         menu.style.display = "block";
     } else {
         menu.style.display = "none";
+        icone.innerHTML = "menu";
     }
 }
