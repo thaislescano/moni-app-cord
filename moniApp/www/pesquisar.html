@@ -1,9 +1,11 @@
-<div class="navbar flexbox-box">
+<div class="navbar flexbox-row">
     <i id="more" class="material-icons item" onclick="mostrarMenu()"> menu </i>
-    <div id="myMenu">
-        <a href="#ir1">o que</a>
-        <a href="#ir2">ainda</a>
-        <a href="#ir3">n sei</a>
+    <div id="myMenu" onclick="mostrarMenu()">
+        <ul>
+            <li> Registrar monitoria </li>
+            <li> Ver registros </li>
+            <li> Como avaliar </li> 
+        </ul>    
     </div>
     <img class="item" id="logo-branca" src="img/moni-white.png" alt="logo moni branca">
     <i id="conta" class="material-icons item"> account_circle </i>
@@ -11,10 +13,10 @@
 
 <div class="imagem-centro-box">
    
-        <img class="imagem-centro tamanhoGif" src="img/lupazoom.gif" alt="gif lupa">
+        <img class="imagem-centro" src="img/lupazoom.gif" alt="gif lupa">
    
 </div>
-  <div class="search-container flexbox-box">
+  <div class="search-container flexbox-row">
         
             <input id="pesquisa" type="text" placeholder="Pesquisar por disciplina" name="search">
             <button type="submit">  Buscar </button>
