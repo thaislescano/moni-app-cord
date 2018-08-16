@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-      
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/geral.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title> Moni</title>
-    </head>
-    <body>
-        <div id="moni-logo">
-            <img id="moni-logo-imagem" src="img/monilog.gif"></img>
+<head>
+    <title> Moni </title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  
+</head>
+<body>
+    <div id="corpo">
+        <div class="imagem-centro-box">
+             <img class="imagem-centro" src="img/monilog.gif" alt="logo do moni">
         </div>
-        <form>
-            <input placeholder="Username" type="text" required="">
-            <input placeholder="Senha" type="password" required="">
-            <button onclick="chamarPagina()">Entrar</button>
-        </form>
-        <div id="btnFooter">criar conta</div>  
+        <div class="moni-form">
+          <input  placeholder="Username" type="text" required="">
+          <input  placeholder="Senha" type="password" required="">
+         <button  onclick="carregarView('pesquisar')">Entrar</button>
+    </div>
+      
+    </div>
+</body>
 
-       <div id="y"></div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/PAGINAS.js"></script>
 </html>

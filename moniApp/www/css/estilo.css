@@ -1,0 +1,249 @@
+/* --- fontes importadas --- */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* --- GERAL --- */
+
+body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;           
+    -webkit-user-select: none;   
+    background-color:#E4E4E4;
+    background-attachment:fixed;
+    font-family:'Roboto', Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+.flexbox-box{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* GERAL -> material design icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: white;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+/* imagens centralizadas - tela login, registro, avaliação, perfil , pesquisa(?) */
+
+.imagem-centro-box {
+    margin-top:18%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-align-items: center; 
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  
+   }
+
+  .imagem-centro-box-coluna {
+    margin-top:18%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-align-items: center; 
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  
+ } 
+.imagem-centro {
+    text-align:center;
+    width:80%;
+    margin-top:-10%;
+}
+
+/* LOGIN - inputs e botões */
+
+/*box do login */
+ .moni-form {
+    box-sizing: border-box;
+    width: 260px;
+    margin-top: -25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+/*inputs */
+.moni-form input::-webkit-input-placeholder, button {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+.moni-form input::-webkit-input-placeholder{
+  	text-align:left;
+  }
+
+.moni-form input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 20px 0;
+    border-bottom: solid 1px #454744;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #454744 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #454744 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #454744;
+    text-transform: uppercase;
+  }
+
+ .moni-form input:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+
+  .moni-form input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color:#454744;
+    font-size: 15px;
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+    visibility: visible !important;
+  }
+  
+  /*botão entrar */
+ .moni-form button {
+    border: none;
+    background: #454744;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size:16px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* --- NAVBAR TODAS PÁGINAS --- */
+
+ .navbar{
+    width:100%;
+    height:56px;
+    position:fixed;
+    top:0;
+    background-color:#454744;
+    /*flexbox*/
+  }
+
+  #more {
+    position: fixed;
+    left: 2%;
+  }
+
+  #conta {
+   position: fixed;
+   right: 2%;
+  }
+
+  #logo-branca {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+/* menu hamburger do navbar */
+.navbar #myMenu {
+  display: none;
+  width:100%;
+  height:200px;
+  position:fixed;
+  top:54px;
+  background-color:#ab47bc;
+}
+
+/*gif centro */
+.imagem-centro-acao {
+	text-align:center;
+    width:60%;
+    margin-top:-10%;
+}
+
+
+/*buscar*/
+.search-container {
+  width:100%; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.search-container input[type=text] {
+  width: 200px;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 15px;
+  border: 1px solid #fff;
+  border-radius:3px;
+  font-family:'Roboto', Arial, sans-serif;
+}
+
+#pesquisa{
+	margin-left:auto;
+	margin-right:0;
+}
+
+ .search-container button {
+  float: right;
+  color: white;
+  padding: 8px 10px;
+  margin-top: 8px;
+  margin-right: auto;
+  background: #454744;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.search-container input::-webkit-input-placeholder{
+  	text-align:center;
+  }
