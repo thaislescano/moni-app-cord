@@ -42,7 +42,7 @@ input::-webkit-input-placeholder, button {
             transition: all 0.3s ease-in-out;
   }
 
-  form {
+  .moni-form {
     box-sizing: border-box;
     width: 260px;
     margin-top: -25%;
