@@ -64,10 +64,16 @@ body {
 
 .imagem-centro {
     text-align:center;
-    width:100%;
     margin-top:-10%;
 }
-
+/*se for logo*/
+.tamanhoLogo{ 
+	width:100%;
+ }
+ /*se for gif*/
+ .tamanhoGif{
+ 	width:60%;
+ }
 /* LOGIN - inputs e botões */
 
 /*box do login */
@@ -175,12 +181,6 @@ body {
   background-color:#ab47bc;
 }
 
-/*gif centro */
-.imagem-centro-acao {
-	text-align:center;
-    width:60%;
-    margin-top:-10%;
-}
 
 
 /*buscar*/
