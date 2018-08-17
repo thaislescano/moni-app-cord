@@ -1,32 +1,19 @@
-
-
-function chamarPagina(){
-	alert("clicado");
-	var xhr= new XMLHttpRequest();
-	xhr.open('GET', 'x.html', true);
-	xhr.onreadystatechange= function() {
-	    if (this.readyState!==4) return;
-	    if (this.status!==200) return; // or whatever error handling you want
-	    document.getElementById('btnFooter').innerHTML= this.responseText;
-	};
-	xhr.send();
-
-	//window.location = "pesquisar.html";
+function carregarView(pagina){
+	//nessa parte vai receber uma string com o nome da pagina que vc quer chamar e..
+	if(PAGINAS[pagina] !== undefined){
+		document.getElementById("corpo").innerHTML = PAGINAS[pagina];
+	}
+	//carregar ela dentro do #corpo se existir
 }
 
-
-
 function mostrarMenu(){
-	/*alert('é hora do show');*/
 	var menu = document.getElementById("myMenu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-        var icone = document.getElementById("more");
-        icone.innerHTML = "menu";
-    } else {
+	var icone = document.getElementById("more");
+    if (menu.style.display === "none") {
+    	icone.innerHTML = "close";
         menu.style.display = "block";
-        var icone = document.getElementById("more");
-   		icone.innerHTML = "close";
+    } else {
+        menu.style.display = "none";
+        icone.innerHTML = "menu";
     }
-
 }

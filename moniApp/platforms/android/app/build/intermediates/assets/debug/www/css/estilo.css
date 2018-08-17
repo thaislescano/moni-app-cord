@@ -239,14 +239,3 @@ li:last-child {
   cursor: pointer;
   border-radius: 3px;
 }
-
-/*cards dos resultados */
-.info-card {
-  margin-top: 5%;
-  width:80%; 
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  box-shadow: 0 4px 8px #e1bee7;
-}
