@@ -17,3 +17,14 @@ function mostrarMenu(){
         icone.innerHTML = "menu";
     }
 }
+
+function mostrarCards(){
+	//depois: receber input
+	//buscar prof daquele input(disciplina)
+	//mostrar os cards com a informação
+
+	var card = document.createElement("div");
+	card.classList.add("info-card");
+	document.body.appendChild(card);
+
+}

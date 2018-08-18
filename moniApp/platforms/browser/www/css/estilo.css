@@ -28,6 +28,17 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.flexbox-row-around{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* GERAL -> material design icons */
 .material-icons {
@@ -249,4 +260,16 @@ li:last-child {
   margin-right: auto;
   background-color: white;
   box-shadow: 0 4px 8px #e1bee7;
+}
+
+.info-card img {
+  margin: 4%;
+  float: left;
+  border-radius: 50%;
+  width: 30%;
+}
+
+.info-monitor{
+  margin-top:5%;
+  margin-right:5%;
 }
