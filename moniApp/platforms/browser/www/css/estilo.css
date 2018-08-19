@@ -14,7 +14,6 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 .flexbox-row{
@@ -70,11 +69,15 @@ body {
 /* imagens centralizadas - tela login, registro, avaliação, perfil , pesquisa(?) */
 
 .imagem-centro-box {
+    margin-top:8%;
+ }
+
+ .imagem-centro-img {
     margin-top:18%;
+    text-align:center;
  }
  
 .imagem-centro {
-    text-align:center;
     margin-top:-10%;
     width:60%;
 }
@@ -82,7 +85,6 @@ body {
 .tamanhoLogo{
      width:100%;
 }
-
 
 /* LOGIN - inputs e botões */
 
@@ -94,6 +96,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;
+    text-transform:uppercase;
 }
 
 /*inputs */
@@ -139,7 +142,7 @@ body {
   }
   
   /*botão entrar */
- .moni-form button {
+ .moni-form #entrar {
     border: none;
     background: #454744;
     cursor: pointer;
@@ -262,8 +265,8 @@ li:last-child {
   box-shadow: 0 4px 8px #e1bee7;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  animation-duration: 3s;
-  -webkit-animation-duration: 3s;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 }
 /* animação para aparecer os cards */
     @-webkit-keyframes fadeIn {
@@ -285,4 +288,19 @@ li:last-child {
 .info-monitor{
   margin-top:5%;
   margin-right:5%;
+}
+
+/*botão criar conta */
+#criar{
+  position:fixed;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 60px;
+  background: #454744;
+  color: white;
+  text-transform: uppercase;
+  border-left-color: #454744;
+  border-top-color: #454744;
 }

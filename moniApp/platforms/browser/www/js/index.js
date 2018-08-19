@@ -9,12 +9,14 @@ function carregarView(pagina){
 function mostrarMenu(){
 	var menu = document.getElementById("myMenu");
 	var icone = document.getElementById("more");
-    if (menu.style.display === "none") {
+    if (menu.style.display === "none" || !menu.style.display) {
+    	menu.style.display="block";
     	icone.innerHTML = "close";
-        menu.style.display = "block";
+      
     } else {
-        menu.style.display = "none";
-        icone.innerHTML = "menu";
+    	menu.style.display="none";
+    	icone.innerHTML = "menu";
+
     }
 }
 
