@@ -260,7 +260,20 @@ li:last-child {
   margin-right: auto;
   background-color: white;
   box-shadow: 0 4px 8px #e1bee7;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 }
+/* animação para aparecer os cards */
+    @-webkit-keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
 
 .info-card img {
   margin: 4%;
